@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct APIResponse: Codable {
+    let results: [APIResponseResults]
+}
+
+struct APIResponseResults: Codable {
+    let name: String
+    let image: String
+    let status: String
+}
